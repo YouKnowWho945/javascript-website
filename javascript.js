@@ -3,7 +3,9 @@ function onPress(imputName) {
     let age = 10
     age = 11
     age = add()
-$.get
+$.get("https://pokeapi.co/api/v2/pokemon/ditto", function (data) {
+    console.log(data.name);
+});
   myAlert(age);
   document.getElementById("output").innerHTML = "Now I am in control! Mwahahaha!!!";
 }
