@@ -4,7 +4,8 @@ function onPress(imputName) {
     age = 11
     age = add()
 $.get("https://pokeapi.co/api/v2/pokemon/ditto", function (data) {
-    console.log(data.name);
+    console.log(data);
+    document.getElementById("name").innerHTML = data.name;
 });
   myAlert(age);
   document.getElementById("output").innerHTML = "Now I am in control! Mwahahaha!!!";
